@@ -1,0 +1,381 @@
+@media (max-width: 987px) {
+  .main-header {
+    position: static; /* Removes fixed */
+  }
+  .bar-container {
+    display: flex;
+  }
+
+  .main-header > * {
+    display: none;
+  }
+
+  .main-header img {
+    display: block;
+    width: 140px;
+    position: absolute;
+    right: 0;
+  }
+  .body-content {
+    padding-top: 0;
+  }
+  .first-div {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-content .first-div :first-child {
+    padding-top: 10px;
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+  .body-content .first-div :last-child {
+    font-size: 70px;
+    font-weight: 800;
+  }
+  .second-div {
+    width: 100%;
+  }
+  .course-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 450px;
+  }
+  .course-information .links-container {
+    display: block;
+    width: 100%;
+  }
+  .links-container .all-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .course-information .contact-container-informationC {
+    display: none;
+  }
+  .course-information .links-container .titleH {
+    margin-right: 20%;
+  }
+  .whatsapp-contact {
+    display: none;
+  }
+  .whatsapp-contact-version2 {
+    display: flex;
+  }
+  .advantages-part .advantages-body-section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left-part"
+      "right-part";
+  }
+
+  .advantages-part .leftSection,
+  .advantages-part .rightSection {
+    max-width: 100%;
+    margin-right: 40px;
+  }
+
+  .advantages-part .leftSection {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .advantages-part .rightSection {
+    margin-bottom: 70px;
+    padding: 0 10px;
+  }
+  .advantages-part {
+    box-shadow: none;
+  }
+  .advantages-part .leftSection:hover,
+  .advantages-part .rightSection:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .advantages-part .sentence {
+    margin-right: 40px;
+    padding: 0 10px;
+  }
+
+  .how-it-works-section {
+    height: fit-content;
+  }
+  .how-it-works-section-content {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    gap: 10px;
+    padding-bottom: 50px;
+  }
+  .how-it-works-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .how-it-works-item p:not(.how-it-works-item-title) {
+    display: none;
+  }
+
+  .one:before,
+  .three:before,
+  .three:after {
+    display: none;
+  }
+  .how-it-works-section h1 {
+    margin-bottom: 30px;
+  }
+  .about-us-section {
+    padding-bottom: 100px;
+  }
+  .about-us-section .about-us-section-content-container {
+    width: 90%;
+  }
+  .plus-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .plus-icon :first-child {
+    transform: rotate(90deg);
+  }
+  .plus-icon :last-child {
+    transform: translateY(-1px);
+  }
+
+  .questions-section-container .questions-section-container-part {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .questions-section
+    .questions-section-container
+    .questions-section-container-part:nth-child(2):last-child {
+    margin-bottom: 60px;
+  }
+  .questions-section-container-part .answer-part {
+    padding: 0 10px;
+  }
+
+  .questions-section .questions-section-container,
+  .public-service .questions-section-container {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    width: 100%;
+  }
+
+  .public-service {
+    min-height: 800px;
+  }
+  .questions-section .questions-section-container,
+  .public-service .questions-section-container {
+    gap: 0;
+  }
+
+  .main-footer .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer-text-input {
+    width: 70%;
+    height: 65px;
+    justify-content: flex-start;
+    gap: 120px;
+  }
+  .footer-text-input label {
+    margin-right: 10px;
+    width: 60px;
+  }
+  .a-footer {
+    margin-bottom: 100px;
+  }
+  .main-footer h3 {
+    padding: 0 20px;
+  }
+}
+/************************************************************************************/
+
+@media (max-width: 666px) {
+  .course-information {
+    height: 500px;
+  }
+  .course-information .links-container .titleH {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .course-information .links-container {
+    height: 600px;
+  }
+
+  .advantages-part .sentence {
+    margin-right: 20px;
+  }
+  .advantages-body-section .leftSection {
+    margin-right: 20px;
+  }
+  .advantages-body-section .rightSection {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 460px) and (max-width: 666px) {
+  .main-footer .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer-text-input {
+    width: 60%;
+    height: 65px;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .first-div {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-content .first-div :first-child {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  .body-content .first-div :last-child {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .second-div {
+    font-size: 1rem;
+    padding: 0 auto;
+  }
+
+  .course-information .links-container .titleH {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .course-information .links-container .all-links {
+    width: 100%;
+    margin-right: 5px;
+  }
+  .course-information {
+    width: 100%;
+    margin-right: 20px;
+    height: 450px;
+  }
+  .links-container {
+    width: 100%;
+    display: block; /**********************************************************************************/
+  }
+
+  .all-links .link-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    justify-content: flex-start;
+    border: 1px solid #dbdbdb;
+    padding-left: 5px;
+  }
+  .links-container .all-links .link-item .fa {
+    display: block;
+  }
+  .fa-arrow-circle-left {
+    display: block;
+    position: absolute;
+    left: 10px;
+  }
+
+  .link-item .horizontal-line {
+    transform: rotate(90deg);
+    width: 30px;
+    height: 3px;
+  }
+  .link-item img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0;
+  }
+
+  .footer-text-input {
+    width: 70%;
+    height: 65px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .footer-text-input label {
+    margin-right: 10px;
+    max-width: 20px;
+    min-width: 5px;
+    font-size: 0.8rem;
+  }
+  .advantages-part .advantages-title-section h1 {
+    font-size: 2rem;
+  }
+  .advantages-title-section .sentence {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+/************************************************************************************/
+@media (max-width: 307px) {
+  .body-content .first-div :first-child {
+    font-size: 10vw;
+    padding-bottom: 30px;
+  }
+  .body-content .first-div :last-child {
+    font-size: 15vw;
+    font-weight: 800;
+  }
+
+  .about-us-section .about-us-section-content-container {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 270px) {
+  .bar-container {
+    display: flex;
+    left: 0;
+    position: absolute;
+    margin: 0;
+  }
+
+  .main-header img {
+    display: block;
+    width: 90px;
+    position: absolute;
+    right: 0;
+  }
+
+  .body-content .first-div :first-child {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+  }
+  .body-content .first-div :last-child {
+    position: absolute;
+    left: 20px;
+    top: 150px;
+  }
+  .footer-text-input {
+    gap: 10px;
+  }
+  .footer-text-input label {
+    margin-right: 10px;
+    max-width: 20px;
+    min-width: 5px;
+    font-size: 0.8rem;
+  }
+}
